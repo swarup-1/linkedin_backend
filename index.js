@@ -10,7 +10,7 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 app.use("/users",users)
-// app.use(authFun)
+app.use(authFun)
 app.use("/posts",posts)
 
 app.listen(process.env.port, async()=>{
